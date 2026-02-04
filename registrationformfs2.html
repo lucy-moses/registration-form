@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form class="register-form">
+        <h2>Registration Form</h2>
+
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter first name" required>
+
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter last name" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required minlength="8">
+
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Confirm password" required minlength="8">
+
+        <label>Date of Birth:</label>
+        <input type="date" required>
+
+        <label>Gender:</label>
+        <div class="gender">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <label>Country:</label>
+        <select required>
+            <option value="">Select your country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Nigeria</option>
+            <option>Gambia</option>
+            <option>China</option>
+            <option>Uganda</option>
+            <option>Canada</option>
+        </select>
+
+        <label>Profile Picture:</label>
+        <input type="file" accept="image/*" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
